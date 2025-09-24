@@ -6,13 +6,13 @@ int main(){
     int tipoTratamento, tipoPlano, tipoPagamento;
 
     printf("Qual o seu nome: ");
-    scanf("%s", nomeCliente);
+    scanf(" %[^\n]", nomeCliente);
     printf("Qual o nome do Animal: ");
-    scanf("%s", nomeAnimal);
+    scanf(" %[^\n]", nomeAnimal);
     printf("Qual a raca do Animal: ");
-    scanf("%s", raca);
+    scanf(" %[^\n]", raca);
     printf("Qual a sua data de nascimento do Animal: ");
-    scanf("%s", dataNascimento);
+    scanf(" %[^\n]", dataNascimento);
     printf("Qual o seu endereco(CEP): ");
     scanf("%f", &endereco);
     printf("Qual o seu telefone: ");
@@ -115,9 +115,12 @@ int main(){
     valorFinal = (valorConsulta - desconto) + (valorExame * quantidadeExame) + valorMedicacao;
     
     //EXIBER OS DETALHES
-    printf("\nNOME DO CLIENTE: %s", nomeCliente);
-    printf("\nNOME DO ANIMAL: %s", nomeAnimal);
-    printf("\nDATA DE NASCIMENTO: %s", dataNascimento);
+    printf("\nALUNO: EDSON RAFAEL");
+    printf("\nATIVIDADE DE ALGORITMO");
+    printf("\n RELATÓRIO GERAL DE DO ATENDIMENTO");
+    printf("\nNOME DO CLIENTE: %2s", nomeCliente);
+    printf("\nNOME DO ANIMAL: %2s", nomeAnimal);
+    printf("\nDATA DE NASCIMENTO: %2s", dataNascimento);
     printf("\nVALOR DA CONSULTA: %f", valorConsulta);
     printf("\nVALOR DO EXAME: %f", valorExame);
     printf("\nQUANTIDADE DE EXAMES: %d", quantidadeExame);
